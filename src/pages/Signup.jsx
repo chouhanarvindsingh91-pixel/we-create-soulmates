@@ -1,4 +1,3 @@
-```jsx
 import { useState } from "react";
 import "./Signup.css";
 
@@ -215,4 +214,3 @@ function Signup({ onLogin, onProfile }) {
 }
 
 export default Signup;
-```
