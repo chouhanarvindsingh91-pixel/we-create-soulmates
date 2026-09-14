@@ -1,7 +1,8 @@
+```jsx
 import { useState } from "react";
 import "./Signup.css";
 
-function Signup({ onLogin }) {
+function Signup({ onLogin, onProfile }) {
   const [formData, setFormData] = useState({
     name: "",
     age: "",
@@ -55,6 +56,10 @@ function Signup({ onLogin }) {
 
     setError("");
     setSuccess(true);
+
+    setTimeout(() => {
+      onProfile();
+    }, 1000);
   };
 
   return (
@@ -210,3 +215,4 @@ function Signup({ onLogin }) {
 }
 
 export default Signup;
+```
